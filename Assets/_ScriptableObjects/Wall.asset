@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectID: 2
   objectName: Wall
-  objectSize: {x: 5.1, y: 6, z: 1.9000001}
+  objectSize: {x: 5.1, y: 6, z: 1.9}
+  objectPrice: 0
   canPutObjectOnThis: 1
   objectPrefab: {fileID: 2917278599475408957, guid: 8e83a8f4c82c180429c38984e7b68137, type: 3}
   allowedSurfaces:

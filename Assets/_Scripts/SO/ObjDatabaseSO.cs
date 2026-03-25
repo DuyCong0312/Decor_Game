@@ -7,6 +7,7 @@ public class ObjDatabaseSO : ScriptableObject
     [SerializeField] private int objectID;
     [SerializeField] private string objectName;
     [SerializeField] private Vector3 objectSize;
+    [SerializeField] private float objectPrice;
     [SerializeField] private bool canPutObjectOnThis = false;
     [SerializeField] private GameObject objectPrefab;
     
@@ -16,6 +17,7 @@ public class ObjDatabaseSO : ScriptableObject
     public int ObjectID => objectID;
     public string ObjectName => objectName;
     public Vector3 ObjectSize => objectSize;
+    public float ObjectPrice => objectPrice;
     public bool CanPutObjectOnThis => canPutObjectOnThis; 
     public GameObject ObjectPrefab => objectPrefab; 
     public LayerMask AllowedSurfaces => allowedSurfaces;
@@ -42,7 +44,11 @@ public class ObjDatabaseSO : ScriptableObject
         for (int i = 1; i < colliders.Length; i++)
             combined.Encapsulate(colliders[i].bounds);
 
-        objectSize = combined.size;
+        objectSize = new Vector3(
+            (float)System.Math.Round(combined.size.x, 2),
+            (float)System.Math.Round(combined.size.y, 2),
+            (float)System.Math.Round(combined.size.z, 2)
+        );
 
         DestroyImmediate(temp); // clean up immediately
 

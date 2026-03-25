@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectID: 3
   objectName: Ground
-  objectSize: {x: 5.000001, y: 1.9000005, z: 5.0000014}
+  objectSize: {x: 5, y: 1.9, z: 5}
+  objectPrice: 0
   canPutObjectOnThis: 1
   objectPrefab: {fileID: 2623659833861542114, guid: 2ef307430774dc348baac7c2cedff570, type: 3}
   allowedSurfaces:

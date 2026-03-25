@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Storage Box 2
   m_EditorClassIdentifier: 
   objectID: 0
-  objectName: Storage Box 2
-  objectSize: {x: 0.48742115, y: 0.41520536, z: 0.65362537}
+  objectName: Storage Box
+  objectSize: {x: 0.49, y: 0.42, z: 0.65}
+  objectPrice: 10
   canPutObjectOnThis: 0
   objectPrefab: {fileID: 8822993183886583624, guid: 4aa01586495c8104db766faeab699378, type: 3}
   allowedSurfaces:

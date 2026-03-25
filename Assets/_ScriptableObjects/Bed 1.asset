@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Bed 1
   m_EditorClassIdentifier: 
   objectID: 1
-  objectName: Bed 1
-  objectSize: {x: 2.4464128, y: 1.3559132, z: 3.6034741}
+  objectName: Bed
+  objectSize: {x: 2.45, y: 1.36, z: 3.6}
+  objectPrice: 100
   canPutObjectOnThis: 1
   objectPrefab: {fileID: 1784028745684930606, guid: dae1d46ebbf35ef4cbbe02b16f958658, type: 3}
   allowedSurfaces:
