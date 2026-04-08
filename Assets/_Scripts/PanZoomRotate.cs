@@ -20,21 +20,15 @@ public class PanZoomRotate : MonoBehaviour
 
     [Header("Zoom")]
     [SerializeField] private float zoomSpeed = 0.1f;
-    [SerializeField] private float minZoom = 20.0f;
-    [SerializeField] private float maxZoom = 50.0f; 
     private float zoomThreshold = 5f;
 
     [Header("Pan")]
     [SerializeField] private float panSpeed = 0.5f;
-    [SerializeField] private float panLimitX = 10.0f;
-    [SerializeField] private float panLimitY = 10.0f; 
     private PanDirection panDirection = PanDirection.None;
 
 
     [Header("Rotate")]
     [SerializeField] private float rotateSpeed = 0.5f;
-    [SerializeField] private float minPitch = -20f;
-    [SerializeField] private float maxPitch = 80f;
     private float rotateThreshold = 1.5f;
 
     private Vector2 touchStart;
@@ -93,14 +87,6 @@ public class PanZoomRotate : MonoBehaviour
     {
         orbitalFollow.HorizontalAxis.Value += drag.x * rotateSpeed;
         orbitalFollow.VerticalAxis.Value += drag.y * rotateSpeed;
-        //if (Mathf.Abs(drag.x) > Mathf.Abs(drag.y))
-        //{
-        //    orbitalFollow.HorizontalAxis.Value += drag.x * rotateSpeed;
-        //}
-        //else
-        //{
-        //    orbitalFollow.VerticalAxis.Value -= drag.y * rotateSpeed;
-        //}
     }
 
     private void DetectPanDirection()
